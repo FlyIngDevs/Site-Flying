@@ -1,0 +1,133 @@
+footer {
+    background-color: #f0ecec;
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-neutral-1);
+    font-weight: 500;
+    
+}
+#copyright a {
+  color: #000000;
+}
+
+form {    
+     margin: 0px 400px 0px;
+     margin: 50px;
+     height: 300px;
+     width: 40%;     
+  }
+
+  @media screen and (min-width: 550px) and (max-width: 1200px){
+    form{
+      margin: 100px;
+      height: 200px;
+     display: flex;
+     flex-direction: column;
+     margin: none;
+    }
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="mensagem"] {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    background-color: rgb(40, 131, 40);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .e_mail {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .telefone {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .two-column-layout {
+    display: flex; /* Cria um layout de duas colunas */
+    /* justify-content: space-between; /* Espaço igual entre as colunas */
+
+    flex-direction: column-reverse;
+  }
+  
+  .office-address {
+    flex: 1; /* A primeira coluna ocupa 50% do espaço disponível */
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 0 190px;
+  }
+  .item01 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .item02 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .item03 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .item04 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-family: "Anton", sans-serif;
+  }
+  
+  h4 {
+    font-family: "Anton", sans-serif;
+  }
+  
+  
