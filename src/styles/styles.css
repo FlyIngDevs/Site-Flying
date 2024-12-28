@@ -135,8 +135,23 @@ section {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 5px;
-  }
+}
 
-  .carousel-buttons button:hover {
+.carousel-buttons button:hover {
     background-color: #0056b3;
-  }
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin: 0 30px;
+}
+
+.carousel-container {
+    flex: 1;
+    margin-right: 61px; /* Espaço entre o carrossel e o formulário */
+}
+
+.form-container {
+    flex: 1;
+}
