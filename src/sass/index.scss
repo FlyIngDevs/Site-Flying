@@ -22,6 +22,17 @@
   }
 }
 
+.blur {
+  &--visible {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(100, 10%, 80%, 50%);
+    z-index: 1;
+  }
+}
+
 .header {
   width: 100%;
   padding-inline: 1em;
@@ -65,8 +76,9 @@
   }
 }
 
+// TODO: Inverter lógica mobile-first do nav para desktop-first
 .nav {
-  display: block;
+  display: flex;
   position: fixed;
   transform: translateX(-100%);
   transition: transform 400ms ease-in;
@@ -77,6 +89,13 @@
   height: 100vh;
   padding-top: 2em;
   transform: translateX(-100%);
+
+  &__close {
+    display: none;
+    margin-right: 1em;
+    margin-left: auto;
+    align-self: right;
+  }
 
   &__icon {
     width: 18px;
@@ -94,11 +113,13 @@
     &:active,
     &:hover {
       color: hsl(200, 0%, 100%);
+      background-color: hsl(200, 50%, 35%);
     }
   }
 
   &__links {
     display: flex;
+    width: 100%;
     flex-direction: column;
     list-style: none;
     gap: 1em;
@@ -113,8 +134,12 @@
 
   &--visible {
     transform: translateX(0%);
+    z-index: 2;
     .nav__links {
       flex-direction: column;
+    }
+    .nav__close {
+      display: block;
     }
   }
 
@@ -126,8 +151,14 @@
     height: unset;
     width: unset;
     padding-top: unset;
+
     &__links {
       flex-direction: row;
+      gap: 0.5em;
+    }
+
+    &__close {
+      display: none;
     }
   }
 }
