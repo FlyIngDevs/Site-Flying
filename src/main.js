@@ -13,4 +13,3 @@ navClose.addEventListener("click", () => {
   nav.classList.toggle("nav--visible");
   blur.classList.toggle("blur--visible");
 });
-

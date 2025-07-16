@@ -32,7 +32,7 @@
     margin-top: 0.5em;
     line-height: 1em;
     overflow-wrap: normal;
-    font-size: clamp(2em, 2em + 1vw, 3em);
+    font-size: clamp(1.5em, 1.5em + 1vw, 3em);
   }
   &--dark {
     color: white;
@@ -112,9 +112,11 @@
 
   // list-style-image: url('../assets/icons/badge.svg');
   &__item {
-    background-image: url("../assets/icons/badge.svg");
+    font-size: 0.75em;
+    background-image: url("../assets/icons/feather.svg");
     margin-block: 0.25em;
+    line-height: 1em;
     background-repeat: no-repeat;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 }
