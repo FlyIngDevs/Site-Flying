@@ -382,19 +382,22 @@
         <section class="section team">
           <div class="section__content team__content">
             <div class="container team__container">
-              <h1 class="section__heading heading--1">Conhecendo o time</h1>
-              <h2 class="section__heading heading--2">
-                LOREM IPSUM
-                <span class="heading--highlighting-secondary">DOLOR</span> SIT
-                AMET
-                <span class="heading--highlighting-secondary">CONSECTETUR</span
-                >.
+              <h2 class="section__heading team__heading heading--2">
+                QUEM FAZ
+                <span class="heading--highlighting-secondary">ACONTECER</span>
               </h2>
-              <p class="section__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-                earum neque. Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Beatae, placeat minus.
+              <p class="section__paragraph team__paragraph">
+                Somos mais que uma equipe — somos profissionais movidos por
+                desafios e apaixonados por resultados. Essa energia nos
+                impulsiona a entregar sempre o melhor, com foco, criatividade e
+                estratégia.
               </p>
+              <p class="section__paragraph team__paragraph">
+                Unimos experiência, talento e visão para transformar ideias em
+                resultados concretos. Estamos prontos para levar sua marca ao
+                próximo nível.
+              </p>
+
               <div class="cards team__cards">
                 <article class="card team__card">
                   <img
@@ -467,9 +470,69 @@
           </div>
         </section>
 
-        <!-- Call to Action 2 -->
-        <section class="section cta-2">
-          <div class="section__content"></div>
+        <!-- Formulário -->
+        <section class="section contact-form">
+          <div class="section__content contact-form__content">
+            <div class="container ">
+              <h2 class="section__heading contact-form__heading heading--2">
+                Lorem ipsum dolor sit amet <span class="heading--dark heading--highlighting-secondary">consectetu</span>
+              </h2>
+              <p class="section__paragraph contact-form__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis obcaecati, aliquam fugit temporibus atque deserunt
+                eius. Deleniti officiis alias earum autem porro tempore ab magni
+                nulla, officia, nobis pariatur dolores?
+              </p>
+            </div>
+            <form
+              id="contact-form"
+              class="form"
+              method="post"
+              action="enviar_email.php"
+            >
+              <h3 class="form__heading">FALE CONOSCO</h3>
+              <div class="form__wrapper">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  required
+                />
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form__input"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+
+              <input
+                type="tel"
+                class="form__input"
+                id="phone"
+                name="phone"
+                placeholder="Telefone"
+              />
+
+              <textarea
+                class="form__input form__textbox"
+                type="mensagem"
+                id="mensagem"
+                name="mensagem"
+                type=""
+                placeholder="Mensagem"
+              ></textarea>
+
+              <button class="button form__button" type="submit">
+                Enviar
+              </button>
+            </form>
+          </div>
         </section>
 
         <!-- Suporte -->
