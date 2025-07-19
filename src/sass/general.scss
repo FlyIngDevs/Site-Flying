@@ -158,6 +158,38 @@
   }
   &:active,
   &:hover {
-  border: 1px solid hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+  }
+}
+
+.popup {
+  position: fixed;
+  z-index: 4;
+  border: 1px solid hsl(0, 0%, 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1em;
+  min-width: 20em;
+  &__heading {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.25em;
+  }
+  &__text {
+    font-weight: 100;
+    margin-block: 1em;
+    text-align: center;
+    font-size: clamp(0.5em, 0.5em + 1vw, 1em);
+  }
+  &__close {
+    font-size: 1em;
+    width: 100%;
+    background-color: hsl(0, 80%, 60%);
+    margin-top: 1em;
+    &:active,
+    &:hover {
+      background-color: hsl(0, 80%, 50%);
+    }
   }
 }

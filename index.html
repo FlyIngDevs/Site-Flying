@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/ico.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Conheça a Flying — a empresa de tecnologia e marketing digital de Mogi Mirim que leva seu negócio para o próximo nível."/>
+    <meta
+      name="description"
+      content="Conheça a Flying — a empresa de tecnologia e marketing digital de Mogi Mirim que leva seu negócio para o próximo nível."
+    />
     <title>Flying</title>
   </head>
   <body>
@@ -20,6 +23,12 @@
           <img src="src/assets/icons/whatsapp.svg" class="whatsapp__icon" />
         </a>
       </div>
+
+      <dialog class="popup">
+        <h1 class="popup__heading">Atenção!</h1>
+        <p class="popup__text"></p>
+        <button class="popup__close button">Fechar</button>
+      </dialog>
 
       <!-- Navegação/Cabeçalho -->
       <header class="header">
@@ -525,12 +534,7 @@
                 Preencha nosso formulário e fale conosco!
               </p>
             </div>
-            <form
-              id="contact-form"
-              class="form"
-              method="post"
-              action="enviar_email.php"
-            >
+            <form id="contact-form" class="form">
               <h3 class="form__heading">FALE CONOSCO</h3>
               <div class="form__wrapper">
                 <input
@@ -563,9 +567,8 @@
               <textarea
                 class="form__input form__textbox"
                 type="mensagem"
-                id="mensagem"
-                name="mensagem"
-                type=""
+                id="message"
+                name="message"
                 placeholder="Mensagem"
               ></textarea>
 
