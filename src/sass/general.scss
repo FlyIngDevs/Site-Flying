@@ -34,8 +34,17 @@
     overflow-wrap: normal;
     font-size: clamp(1.5em, 1.5em + 1vw, 3em);
   }
+  &--3 {
+    line-height: 1em;
+    font-size: 1.5em;
+    font: 100;
+    margin-top: 1em;
+    font-weight: 100;
+  }
+
   &--dark {
     color: white;
+    transition: color 200ms ease-in;
     // font-weight: bolder;
     &.heading--highlighting {
       color: black;
@@ -43,6 +52,11 @@
       padding-inline: 8px;
       line-height: normal;
       padding-block: 0px;
+    }
+
+    &:active,
+    &:hover {
+      color: hsl(250, 30%, 30%);
     }
   }
 }
@@ -73,12 +87,14 @@
 }
 
 .button {
+  display: block;
   border-radius: 0.75em;
   padding: 0.5em 2em;
   font-size: 25px;
   background-color: hsl(250, 30%, 40%);
   color: white;
   font-weight: bold;
+  width: fit-content;
   transition: background-color 200ms ease-in, transform 200ms ease-out,
     box-shadow 200ms ease, color 200ms ease-in;
   cursor: pointer;
@@ -110,13 +126,37 @@
   list-style: none;
   padding: 0;
 
+  &__heading {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
   // list-style-image: url('../assets/icons/badge.svg');
   &__item {
-    font-size: 0.75em;
+    font-size: 0.9em;
     background-image: url("../assets/icons/feather.svg");
-    margin-block: 0.25em;
+    margin-block: 0.5em;
     line-height: 1em;
     background-repeat: no-repeat;
     padding-left: 30px;
+  }
+}
+
+.whatsapp {
+  position: fixed;
+  display: block;
+  bottom: 2%;
+  right: 2%;
+  width: 3.5em;
+  border-radius: 1.25em;
+  padding: 0.75em;
+  background-color: hsl(100, 50%, 50%);
+  transition: border 200ms ease-in-out;
+  border: 1px solid hsl(100, 50%, 50%);
+  &__icon {
+    filter: invert(100%);
+  }
+  &:active,
+  &:hover {
+  border: 1px solid hsl(0, 0%, 100%);
   }
 }

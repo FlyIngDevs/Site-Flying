@@ -11,12 +11,26 @@
     <div id="app">
       <div class="blur"></div>
 
+      <div class="whatsapp">
+        <a
+          class="whatsapp__link"
+          href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+        >
+          <img src="src/assets/icons/whatsapp.svg" class="whatsapp__icon" />
+        </a>
+      </div>
+
       <!-- Navegação/Cabeçalho -->
       <header class="header">
         <div class="header__content">
-          <div class="header__logo">
-            <img src="src/assets/images/logo_empresa_03.png" alt="" />
-          </div>
+          <a href="/" class="header__logo">
+            <img
+              class="logo__image"
+              src="src/assets/images/logo_empresa_03.png"
+              alt=""
+            />
+            <p class="logo__text">Flying</p>
+          </a>
 
           <nav class="nav">
             <ul class="nav__links">
@@ -29,14 +43,14 @@
                 <a href="" class="nav__link">Home</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Sobre nós</a>
+                <a href="#about" class="nav__link">Sobre nós</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">O que fazemos</a>
+                <a href="#services" class="nav__link">O que fazemos</a>
               </li>
               <li class="nav__item">
                 <img class="nav__icon" src="src/assets/icons/help.svg" alt="" />
-                <a href="" class="nav__link">Suporte</a>
+                <a href="#team" class="nav__link">Equipe</a>
               </li>
               <li class="nav__item">
                 <img
@@ -44,7 +58,7 @@
                   src="src/assets/icons/phone.svg"
                   alt=""
                 />
-                <a href="" class="nav__link">Contato</a>
+                <a href="#contact" class="nav__link">Contato</a>
               </li>
             </ul>
           </nav>
@@ -57,7 +71,7 @@
 
       <main>
         <!-- Hero -->
-        <section class="section hero">
+        <section id="hero" class="section hero">
           <div class="section__content">
             <div class="container">
               <h1 class="section__heading heading--1">
@@ -77,7 +91,11 @@
                 completas e personalizadas para atender todas as suas
                 necessidades em marketing digital e tecnologia.
               </p>
-              <button class="button">Falar Agora</button>
+              <a
+                class="button"
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                >Falar Agora</a
+              >
             </div>
             <div class="container">
               <img
@@ -90,11 +108,11 @@
         </section>
 
         <!-- Sobre nós -->
-        <section class="section about">
+        <section id="about" class="section about">
           <div class="section__content about__content">
             <div class="about__headlines">
               <div class="container about__container">
-                <h2 class="about__heading">Sobre a Flying</h2>
+                <h2 class="about__heading">SOBRE A FLYING</h2>
                 <p class="about__paragraph">
                   Sediada em Mogi Mirim, somos uma empresa especializada em
                   tecnologia e marketing digital, oferecendo soluções completas
@@ -111,13 +129,17 @@
                   de longo prazo.
                 </p>
 
-                <button class="button button--dark about__button">
-                  Lorem Ips
-                </button>
+                <a
+                  href="http://localhost:5173/#contact"
+                  class="button button--dark about__button"
+                  >Saiba mais!</a
+                >
               </div>
-              <div class="section__image about__image">
-                <img src="src/assets/images/about_image.svg" alt="" />
-              </div>
+              <img
+                class="section__image about__image"
+                src="src/assets/images/about_image.jpeg"
+                alt=""
+              />
             </div>
 
             <div class="container about__cards-wrapper">
@@ -198,7 +220,7 @@
         </section>
 
         <!-- Call to Action 1 -->
-        <section class="section cta-1">
+        <section id="cta-1" class="section cta-1">
           <div class="section__content cta-1__content">
             <article class="section__article cta-1__article">
               <section class="container">
@@ -213,13 +235,17 @@
                   Impulsione suas vendas com marketing digital.
                 </h2>
               </section>
-              <button class="button cta-1__button">Contrate</button>
+              <a
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                class="button cta-1__button"
+                >Contrate</a
+              >
             </article>
 
             <article class="section__article cta-1__article">
               <section class="container">
                 <h1
-                  class="section__heading heading--1 heading--dark cta__heading"
+                  class="section__heading heading--1 heading--dark cta-1__heading"
                 >
                   Destaque-se nas buscas online
                 </h1>
@@ -230,18 +256,21 @@
                   clientes.
                 </h2>
               </section>
-              <button class="button button--dark cta-1__button">
+              <a
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                class="button button--dark cta-1__button"
+              >
                 Contrate
-              </button>
+              </a>
             </article>
           </div>
         </section>
 
         <!-- Nossos serviços -->
-        <section class="section services">
+        <section id="services" class="section services">
           <div class="section__content services__content">
             <div class="container services__container">
-              <h1 class="services__heading">Nossos serviços</h1>
+              <h1 class="services__heading">NOSSOS SERVIÇOS</h1>
               <p class="services__paragraph">
                 Aqui você encontra soluções completas para todas as necessidades
                 da sua empresa em marketing digital. Desde estratégias
@@ -282,7 +311,9 @@
                       alt=""
                       class="card__image services__image"
                     />
-                    <h1 class="card__heading services__card-heading">Impressos</h1>
+                    <h1 class="card__heading services__card-heading">
+                      Impressos
+                    </h1>
                   </div>
                 </article>
                 <article class="card services__card">
@@ -300,24 +331,24 @@
                 <article class="card services__card">
                   <div class="card__content">
                     <img
-                      src="src/assets/images/services_card-5.svg"
+                      src="src/assets/images/services_card-5.jpeg"
                       alt=""
                       class="card__image services__image"
                     />
                     <h1 class="card__heading services__card-heading">
-                      Lorem ipsum dolor sit amet.
+                      Consultoria de marketing
                     </h1>
                   </div>
                 </article>
                 <article class="card services__card">
                   <div class="card__content">
                     <img
-                      src="src/assets/images/services_card-6.svg"
+                      src="src/assets/images/services_card-6.jpeg"
                       alt=""
                       class="card__image services__image"
                     />
                     <h1 class="card__heading services__card-heading">
-                      Lorem ipsum dolor sit amet.
+                      Flying Tech Support
                     </h1>
                   </div>
                 </article>
@@ -327,29 +358,52 @@
         </section>
 
         <!-- Detalhes/Especialidades -->
-        <section class="section details">
+        <section id="details" class="section details">
           <div class="section__content">
             <div class="container details__container">
               <h1 class="section__heading heading--1">Especialidade</h1>
               <h2 class="section__heading heading--2">
-                LOREM IPSUM DOLOR SIT
-                <span class="heading--highlighting">AMET</span>.
+                CRIAÇÃO OU REFORMA DE SITES PARA
+
+                <span class="heading--highlighting">EMPRESAS</span>.
               </h2>
               <p class="section__paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente quo quasi exercitationem repellendus quam odit
-                similique eum magnam, accusantium tenetur quidem consectetur
-                recusandae impedit nobis facilis consequuntur et.
+                Nós criamos sites do zero ou damos uma boa repaginada no seu
+                site antigo. A ideia é simples: mostrar a cara da sua empresa,
+                atrair mais clientes e trazer resultados de verdade.
               </p>
               <p class="section__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Seu público já procura por você na internet. Com um site bem
+                feito e estratégias básicas de marketing digital, sua empresa
+                aparece com destaque nas buscas.
               </p>
+              <p class="section__paragraph">
+                Somos de Mogi Mirim e estamos prontos para ajudar.
+              </p>
+
               <article class="card details__card">
+                <h2 class="list__heading">O que você ganha:</h2>
                 <div class="card__content">
                   <ul class="list">
-                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
-                    <li class="list__item">Lorem ipsum dolor sit amet diat.</li>
-                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                    <li class="list__item">
+                      Coloca sua empresa no mundo digital
+                    </li>
+                    <li class="list__item">
+                      Faz seus clientes encontrarem você com facilidade
+                    </li>
+                    <li class="list__item">
+                      Cria uma vitrine online bonita e organizada
+                    </li>
+                    <li class="list__item">
+                      Apresenta seus produtos ou serviços de forma clara
+                    </li>
+
+                    <li class="list__item">
+                      Pode contratar um site novinho em folha
+                    </li>
+                    <li class="list__item">
+                      Ou modernizar o site que você já tem
+                    </li>
                   </ul>
                 </div>
               </article>
@@ -365,7 +419,7 @@
         </section>
 
         <!-- Conhecendo o time -->
-        <section class="section team">
+        <section id="team" class="section team">
           <div class="section__content team__content">
             <div class="container team__container">
               <h2 class="section__heading team__heading heading--2">
@@ -457,20 +511,29 @@
         </section>
 
         <!-- Formulário -->
-        <section class="section contact-form">
+        <section id="contact" class="section contact-form">
           <div class="section__content contact-form__content">
             <div class="container">
               <h2 class="section__heading contact-form__heading heading--2">
-                Lorem ipsum dolor sit amet
+                CONQUISTE MAIS CLIENTES COM A
+
                 <span class="heading--dark heading--highlighting-secondary"
-                  >consectetu</span
+                  >FLYING</span
                 >
+                🚀
               </h2>
+              <h3 class="section__heading heading--3">
+                Marketing Digital em Mogi Mirim
+              </h3>
               <p class="section__paragraph contact-form__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis obcaecati, aliquam fugit temporibus atque deserunt
-                eius. Deleniti officiis alias earum autem porro tempore ab magni
-                nulla, officia, nobis pariatur dolores?
+                Chegou a hora de levar a sua empresa para o próximo nível. Com a
+                Flying, você tem um time preparado para ajudar seu negócio a
+                vender mais, aparecer mais e faturar mais com estratégias
+                inteligentes de Marketing Digital.
+              </p>
+              <p class="section__paragraph contact-form__paragraph">
+                Quer descobrir o caminho prático para o sucesso online? Preencha
+                nosso formulário e fale com a gente!
               </p>
             </div>
             <form
@@ -521,14 +584,62 @@
             </form>
           </div>
         </section>
-
-        <!-- Suporte -->
-        <section class="section support">
-          <div class="section__content"></div>
-        </section>
       </main>
+
       <!-- Rodapé/Links/Contatos -->
-      <footer></footer>
+      <footer id="footer" class="footer">
+        <div class="footer__content">
+          <div class="footer__container">
+            <div class="footer__links">
+              <a class="footer__link" href="https://www.facebook.com/FLYING.MM"
+                ><img
+                  class="footer__icon"
+                  src="src/assets/icons/facebook.svg"
+                  alt=""
+              /></a>
+              <a
+                class="footer__link"
+                href="https://www.instagram.com/fly.ing.mm/"
+                ><img
+                  class="footer__icon"
+                  src="src/assets/icons/instagram.svg"
+                  alt=""
+              /></a>
+              <a
+                class="footer__link"
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                ><img
+                  class="footer__icon"
+                  src="src/assets/icons/whatsapp.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="footer__phone-info">
+              <img
+                class="footer__icon"
+                src="src/assets/icons/phone.svg"
+                alt=""
+              />
+              <a href="tel:+5519998339696" class="footer__phone"
+                >+55 (19) 99833-9696</a
+              >
+            </div>
+            <div class="footer__email-info">
+              <img
+                class="footer__icon"
+                src="src/assets/icons/mail.svg"
+                alt=""
+              />
+              <a href="mailto:contatoflyingmm@gmail.com" class="footer__email"
+                >contatoflyingmm@gmail.com</a
+              >
+            </div>
+          </div>
+          <p class="footer__copyright">
+            © 2025 Flying - Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
     </div>
 
     <script type="module" src="/src/main.js"></script>

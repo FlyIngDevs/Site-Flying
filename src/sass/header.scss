@@ -21,11 +21,14 @@
   }
 
   &__logo {
-    width: 70px;
-    img {
-      background-color: white;
-      border-radius: 0.5em;
-      padding: 0.5em;
+    display: flex;
+    padding: 0.25em;
+    padding-right: 2em;
+    border-radius: 0.5em;
+    transition: background-color 200ms ease-in-out;
+    align-items: center;
+    &:hover {
+      background-color: hsl(200, 50%, 50%);
     }
   }
   &__hamburger {
@@ -33,7 +36,7 @@
     padding: 0.25em;
     transition: background-color 200ms linear;
 
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 820px) {
       display: none;
     }
 
@@ -109,8 +112,11 @@
       display: block;
     }
   }
+  @media screen and (min-width: 620px) {
+    width: 40vw;
+  }
 
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 820px) {
     background-color: unset;
     display: block;
     transform: unset;
@@ -127,5 +133,18 @@
     &__close {
       display: none;
     }
+  }
+}
+
+.logo {
+  &__image {
+    border-radius: 0.5em;
+    width: 70px;
+    padding: 0.5em;
+  }
+  &__text {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-style: italic;
   }
 }
